@@ -1,0 +1,196 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 5rem 0 5rem;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px; 
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#logo {
+    width: 100px;
+    margin-right: 15px;
+}
+
+#text-logo {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Layout for main content and comments */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+}
+
+/* Document styling */
+.document {
+    flex: 1; 
+    max-width: 50rem;
+    background-color: #fff;
+    margin: 0 auto; 
+    padding: 20px;
+    padding-top: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chude {
+    text-align: center; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.chude img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    align-items: center;
+    display: block;
+    margin: 0 auto; 
+    width: 30%;
+    height: auto;
+}
+
+/* Section headings */
+h1 {
+    color: #00457c;
+    margin-top: 20px;
+}
+
+/* Blockquote styling for history and meaning sections */
+blockquote {
+    background-color: #e6f2ff;
+    border-left: 4px solid #00457c;
+    padding: 10px 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #333;
+}
+
+/* Comment section styling */
+.comment-section {
+    width: 40%; 
+    background-color: #f9fafb;
+    padding: 20px;
+    padding-top: 80px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 100px; 
+}
+
+.comment-section h2 {
+    font-size: 20px;
+    color: #00457c;
+    margin-bottom: 15px;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    max-width:95% ;
+}
+
+#comment-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+}
+
+#comment-form input[type="file"] {
+    margin-top: 5px;
+}
+
+#comment-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #00457c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#comment-form button:hover {
+    background-color: #003366;
+}
+
+/* Displayed comments styling */
+#comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.timestamp {
+    color: #888;
+    font-size: 0.85em;
+    margin-left: 8px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1000px) {
+    .main-container {
+        flex-direction: column; 
+    }
+
+    .document, .comment-section {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .comment-section {
+        margin-top: 20px; 
+        margin-left: 0; 
+        position: static; 
+    }
+}
