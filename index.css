@@ -7,14 +7,15 @@ body {
     display: block;
     justify-content: center;
     padding-top: 80px; 
+    margin-right: 40px;
 }
 
 /* Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
-    min-width: 30rem;
-    max-width: 100rem;
+    min-width: 10rem;
+    max-width: 95rem;
     width: 100%;
     display: flex;
     margin: 0 auto; 
@@ -41,6 +42,7 @@ body {
 /* Layout for main content and comments */
 .main-container {
     display: flex;
+    min-width: 1rem;
     max-width: 100rem;
     width: 100%;
     gap: 20px;
@@ -51,7 +53,7 @@ body {
 /* Document styling */
 .document {
     flex: 1; 
-    min-width: 30rem;
+    min-width: 1rem;
     max-width: 50rem;
     width: 100%;
     background-color: #fff;
@@ -74,7 +76,9 @@ body {
     margin-bottom: 15px;
     align-items: center;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
+    min-width: 15rem; 
+    max-width: 25rem;
     width: 30%;
     height: auto;
 }
@@ -97,7 +101,7 @@ blockquote {
 
 /* Comment section styling */
 .comment-section {
-    min-width: 30rem;
+    min-width: 1rem;
     max-width: 50rem;
     width: 100%;
     background-color: #f9fafb;
@@ -196,6 +200,7 @@ blockquote {
 
     .main-container {
         flex-direction: column;
+        max-width: 100rem;
         width: 100%;
     }
 
