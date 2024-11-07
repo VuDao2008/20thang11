@@ -2,9 +2,9 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0 5rem 0 5rem;
+    margin: 0 0 0 0;
     background-color: #f3f4f6;
-    display: flex;
+    display: block;
     justify-content: center;
     padding-top: 80px; 
 }
@@ -13,22 +13,26 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    min-width: 30rem;
+    max-width: 100rem;
     width: 100%;
     display: flex;
+    margin: 0 auto; 
     justify-content: center;
     align-items: center;
-    padding: 15px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
 
 #logo {
-    width: 100px;
-    margin-right: 15px;
+    max-width: 7rem;
+    min-width: 6rem;
+    width: 100%;
 }
 
 #text-logo {
+    
     font-size: 24px;
     color: black;
     font-weight: bold;
@@ -37,7 +41,7 @@ body {
 /* Layout for main content and comments */
 .main-container {
     display: flex;
-    max-width: 1200px;
+    max-width: 100rem;
     width: 100%;
     gap: 20px;
     padding: 20px;
@@ -47,19 +51,22 @@ body {
 /* Document styling */
 .document {
     flex: 1; 
+    min-width: 30rem;
     max-width: 50rem;
+    width: 100%;
     background-color: #fff;
     margin: 0 auto; 
     padding: 20px;
     padding-top: 80px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
 }
 
 .chude {
     text-align: center; 
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 
 .chude img {
@@ -90,12 +97,15 @@ blockquote {
 
 /* Comment section styling */
 .comment-section {
-    width: 40%; 
+    min-width: 30rem;
+    max-width: 50rem;
+    width: 100%;
     background-color: #f9fafb;
     padding: 20px;
     padding-top: 80px;
     margin-left: 20px;
     border-radius: 8px;
+    margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 100px; 
@@ -178,13 +188,25 @@ blockquote {
 }
 
 /* Responsive styling */
-@media screen and (max-width: 1000px) {
-    .main-container {
-        flex-direction: column; 
+@media screen and (min-width: 1000px) {
+    body{
+        display: flex;
+        margin: 0 5rem 0 5rem;
     }
 
-    .document, .comment-section {
-        max-width: 100%;
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .document {
+        max-width: 50rem;
+        width: 100%;
+        margin-right: 20px;
+    } 
+    
+    .comment-section {
+        max-width: 35rem;
         width: 100%;
     }
 
